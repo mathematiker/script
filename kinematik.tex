@@ -1,0 +1,247 @@
+\chapter{Kinematik}
+
+
+
+
+
+
+
+\section{Eindimensionale Bewegung}
+\label{kap_kinematik_eindimensional}
+\index{eindimensionale Bewegung}
+
+Also Bewegung l"angs einer geraden Linie.
+
+Man unterscheidet zwischen der \textbf{Gleichf"ormigen
+  Bewegung}\index{gleichf"ormige Bewegung} mit konstanter
+Geschwindigkeit ($v = \frac{\Delta s}{\Delta t} = \frac{\diff x}{\diff
+  t}= const$) und \textbf{nicht-gleichf"ormiger Bewegung}, bei der die
+Geschwindigkeit eben \emph{nicht} konstant ist. Hier kann man die
+mittlere Geschwindigkeit,
+bzw. \textbf{Momentangeschwindigkeit}\index{Momentangeschwindigkeit}
+\begin{equation}
+     v = \frac{\diff s}{\diff t}
+\end{equation}
+bestimmen.\footnote{Man kann sagen, dass die Momentangeschwindigkeit
+  auch eine gemittelte Geschwindigkeit ist, nur dass man das
+  Zeitintervall $\Delta t$, "uber welchem man mittelt, sehr klein
+  macht: $\Delta t \to 0$.} Bei dieser Bewegung handelt es sich um
+eine \textbf{beschleunigte Bewegung}, wobei man die Beschleunigung
+bestimmen kann:
+\begin{equation}
+\boxed{
+     a = \frac{\diff v}{\diff t} = \frac{\diff^2 s}{\diff t^2}
+}
+\end{equation}
+
+
+
+Um entsprechend aus einer gegebenen Beschleunigung $a(t)$ die
+Momentangeschwindigkeit und die bisher zur"uckgelegte Strecke zu
+berechnen, integriert man die Beschleunigung "uber die Zeit:
+\begin{equation}
+   v(t) = \int_0^t a(\hat t) \diff \hat t \text{ und } s(t) = 
+   \int_0^t v(\hat t) \diff \hat t
+\end{equation}
+\begin{Wichtig}
+   Wichtig ist dabei, dass man beim Integrieren auch sch"on brav die
+   Integrationskonstanten mitnimmt -- sie stellen
+   Anfangsgeschwindigkeit $v_0$ bzw. bereits zur"uckgelegte Strecke
+   $s_0$ dar!
+\end{Wichtig}
+
+
+
+
+
+
+
+\section{R"aumliche Bewegung}
+\index{R"aumliche Bewegung}
+
+
+\begin{Def}[Trajektorie]\index{Trajektorie}
+   Ist die Kurve im Raum, auf der sich ein (Massen)Punkt bewegt. Man
+   bezeichnet sie oft mit $\gamma$ oder $\vec r(t)$
+\end{Def}
+Dabei ist $\gamma$ eine Funktion (oder
+\emph{\index{Parametrisierung}Parametrisierung}) mit $\gamma : \mathbb
+R \to \mathbb R^3: ~ t \mapsto \Ve r(t)$ -- und so wird $\vec r = \vec
+r(t)$ auch Trajektorie genannt.
+
+Bei Bewegungen im Raum kann man im Allgemeinen die Definitionen von
+Kap. \ref{kap_kinematik_eindimensional} verwenden. Hier verwendet man
+eben statt der einfachen Strecke $s$ die Raumkurve $\Ve r$.
+
+\begin{Wichtig}[Ableiten von Vektoren]
+   \index{Vektor!ableiten}\index{Ableiten von Vektoren} Man leitet
+   einen Vektor ab, indem man die Komponenten ableitet:
+     $$
+      \Ve s = \begin{pmatrix}
+                   x\\y\\z
+              \end{pmatrix} ~ \Rightarrow ~
+              \dot{\Ve{s}} = \begin{pmatrix}
+                                  \dot x\\\dot y\\\dot z
+                             \end{pmatrix}
+     $$
+\end{Wichtig}
+
+
+Nun ist im noch zu beachten, dass die (r"aumliche) Geschwindigkeit $\Ve
+v$ stets \emph{in Richtung der Bahntangente} zeigt, w"ahrend die
+(r"aumliche) Beschleunigung $\Ve a$ im allgemeinen \emph{nicht in
+  Richtung der Bahntangente} zeigt. D.h. $\Ve a$ kann sowohl
+Komponenten in Richtung der Bahntangente haben (diese nennen wir $\Ve
+a_T$), als auch senkrecht dazu (diese entsprechend $\Ve a_N$ -- das
+"`$N$"' steht f"ur \emph{normal}).
+
+Mathematisch kann man das herleiten, indem man die Geschwindigkeit $\Ve
+v$ beschreibt als Skalar $v$ und Einheitsvektor $\Ve u_T$, der zur
+Bahnkurve des Teilchens jeweils tangential steht:
+$$
+\Ve v = v \cdot \Ve u_T ~ \Rightarrow ~ \dot{\Ve{v}} = \Ve a =
+\frac{\diff}{\diff t} (v \cdot \Ve u_T) = \underbrace{\frac{\diff
+    v}{\diff t} \cdot \Ve u_T}_{\Ve a_T} + \underbrace{v \cdot
+  \frac{\diff \Ve u_T}{\diff t}}_{\Ve a_N}
+$$
+
+Nun muss man untersuchen, wie $\frac{\diff \Ve u_T}{\diff t}$ aussieht. 
+Dazu unterscheidet man zwei Spezialf"alle:
+
+\begin{description}[\setlabelstyle{\bfseries\slshape}]
+\item[Geradlinige Bahn] dann ist $\frac{\diff \Ve u_T}{\diff t} = 0$
+   da $\Ve u_T = const$. Dann haben $\Ve v$ und $\Ve a$ die selbe
+   Richtung -- und man ist wieder beim eindimensionalen Fall wie in
+   Kap \ref{kap_kinematik_eindimensional} gelandet.
+\item[Gekr"ummte Bahn] Hier n"ahert man die Kr"ummung durch einen Kreis
+   an. Hier zeigt die Ableitung der Tangente radial zum
+   Kreismittelpunkt -- also senkrecht zur Tantente. So ergibt sich
+   also eine Komponente $\Ve a_N \neq \Ve 0$.
+\end{description}
+
+
+
+
+
+
+
+
+\section{Superpositionsprinzip}
+\index{Superposition}
+
+
+\begin{Def}[Superpositionsprinzip]
+   Diese Prinzip besagt, dass man eine Bewegung in unabh"angige
+   Teilbewegungen zerlegen kann.
+\end{Def}
+
+So wird beispielsweise ein \textbf{Schiefer Wurf} zerlegt in eine
+(nach unten) beschleunigte Bewegung und eine gleichf"ormige Bewegung in
+der Horizontalen.
+
+Das Superpositionsprinzip ist immer (im Sinne von "`genau dann wenn"')
+bei \emph{\index{Lineare Theorie}Linearen Theorien} anwendbar.
+
+
+
+
+\section{Kreisbewegung I}
+\label{kap_kreisbewegung-i}
+\index{Kreisbewegung}
+
+Wir betrachten hier eine gleichf"ormige Kreisbewegung (mit Radius $R$),
+d.h. dass die Winkelgeschwindigkeit $\omega = \dot \varphi$ ($\varphi$
+ist der im Kreis "uberstrichene Winkel im Bogenma"s) konstant ist. Dabei
+wird $\omega$ auch als Vektor interpretiert: Er steht senkrecht auf
+der Kreisbewegung und folgt der \textbf{Rechten Faust Regel}: D.h. 
+die Finger der rechten Faust zeigen in die Richtung, in die das
+Massenteilchen rotiert, dann zeigt der ausgestreckt Daumen in die
+Richtung des Vektors $\Ve \omega$.
+
+Man kann die Bahnkurve eines solchen Teilchens parametrisieren durch
+$$
+ \Ve r = \begin{pmatrix}
+              R \cdot \cos \varphi(t)\\
+              R \cdot \sin \varphi(t)
+         \end{pmatrix}
+$$
+
+Das Bogenma"s eines Winkels ist definiert als
+\begin{equation*}
+   \varphi = \frac{s}{r}
+\end{equation*}
+wobei $r$ der Radius und $s$ die \emph{Kreisbogenl"ange} eines
+Kreisbogens ist, der den "Offnungswinkel $\varphi$ bestitzt. F"ur eine
+Rotation um einen konstanten Radius $r$ ist deswegen die
+\index{Winkelgeschwindigkeit}\textbf{Winkelgeschwindigkeit}:
+\begin{equation}
+   \label{eqn_winkelgeschwindigkeit_kreis}
+   \omega = \dot \varphi = \frac{\dot s}{r} = \frac{v}{r}
+\end{equation}
+Wenn wir nun einen \emph{Vektor} $\vec v$ untersuchen, so sehen wir,
+dass dieser seine Richtung st"andig "andert -- weil $v = \omega \cdot r$
+ist, und $\omega$ und $r$ konstant sind, ist die \emph{L"ange} des
+Vektors jedoch konstant. 
+
+Untersucht man den Geschwindigkeitsvektor
+eines mit $\omega = \const$ rotierenden Teilchens zu zwei Zeiten, so
+ist der Winkel $\diff \varphi$ nicht nur der "Offnungswinkel zwischen den
+beiden Ansatzpunkten der Vektoren, sondern auch der Winkel zwischen
+den Vektoren. "Uberlegt man weiter, dass die Vektorspitze demnach einen
+Kreisbogen der L"ange
+\begin{equation*}
+   \| \diff \vec v \| = v \cdot \diff \varphi
+\end{equation*}
+zur"uckgelegt hat, so findet man, in dem man
+\eqref{eqn_winkelgeschwindigkeit_kreis} nach $v$ aufl"ost, einsetzt und
+durch $\diff t$ teilt:
+\begin{equation}
+   \label{eqn_winkelbeschleunigung_kreis}
+\left \|   \frac{\diff }{\diff t} \vec v \right \| =  \dot \varphi r
+\cdot \frac{\diff \varphi}{\diff t} = {\dot \varphi}^2 r = \omega^2
+\cdot r = a_Z
+\end{equation}
+Man erh"alt also die
+\textbf{\index{Zentripetalbeschleunigung}Zentripetalbeschleunigung}.
+Multipliziert man diese nun mit $m$ erh"alt man wegen $F = ma$ die
+Zentripetalkraft zu
+\begin{equation}
+   \label{eqn_zentripetalkraft_kreis}
+   F_z = m \cdot \omega^2 \cdot r
+\end{equation}
+
+
+
+Bei der Kreisbewegung ergeben sich nun folgende Gr"o"sen:
+\begin{description}[\setlabelstyle{\bfseries\slshape}]
+     \item[Periodendauer] $T = \frac{2\pi}{\omega}$
+     \item[Frequenz] $f = \nu = \frac{1}{T} = \frac{\omega}{2\pi}$
+     \item[Bahngeschwindigkeit] $\boxed{v = \frac{2\pi R}{T} = \omega \cdot R}$
+bzw. $\vec v =  \vec \omega \times \vec r$
+     \item[Zentripetalbeschleunigung] $\Ve a_Z = \frac{v^2}{R} \cdot
+        \Ve u_N ~\Rightarrow ~ \boxed{\|\Ve a_Z\| = \omega^2 \cdot R}$
+        \\gilt nur f"ur $\omega = const$!
+ \end{description}
+
+
+\begin{Wichtig}[$\nu \neq v$]
+   Der griechische Buchstabe $\nu$ ("`n"u"') gibt meistens Frequenzen
+   an, w"arend das lateinische $v$ ("`vau"') oft f"ur Geschwindigkeiten
+   verwendet wird. Nicht verwechseln!
+\end{Wichtig}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

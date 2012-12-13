@@ -1,0 +1,452 @@
+\begin{landscape}
+\chapter{Formelzeichen}
+\label{kap_formelzeichen}
+
+
+%\begin{table}[ht]
+%\begin{tabular}{c l l c c}
+\begin{longtable}{c l l c c}
+   \textbf{Zeichen} & \textbf{Name} & \textbf{Einheit} &
+   \textbf{Definition} & \textbf{Wichtig}\\
+\hline
+\endfirsthead
+
+   \textbf{Zeichen} & \textbf{Name} & \textbf{Einheit} &
+   \textbf{Definition} & \textbf{Wichtig}\\
+~ \\
+\endhead
+%
+~ & \textsc{Mechanik}\\
+$F$ & Kraft & $\operatorname{N} =
+\frac{\operatorname{m}}{\operatorname{s}^2}$ & $F = m\frac{\diff ^2s}{\diff t^2}$ & $F =
+ma$\\
+$F_g$ & Schwerkraft & $\operatorname{N}$ & fundamental & $F = \gamma
+\frac{m_1 m_2}{r^2}$\\
+$W$ & Arbeit & $\operatorname{J} = \operatorname{N}\cdot
+\operatorname{m}$ & $\diff W = F \diff s$ \\
+$\vec p$ & Impuls & $\operatorname{N}\cdot\operatorname{s}$ & $\vec p
+= m \cdot \vec v$ & $\vec F = \dot{\vec p}$\\
+$\vec L$ & Drehimpuls & $\operatorname{m}\cdot\operatorname{N}\cdot\operatorname{s}$ & $\vec L
+= \vec r \times \vec p$\\
+$\vec M$ & Drehmoment & $\operatorname{m}\cdot\operatorname{N}$ &
+$\vec M = \frac{\diff }{\diff t}\vec L = \vec r \times \vec F$\\
+%
+\hline
+~ \\
+%
+%
+%
+~ & \textsc{Starrer K"orper}\\
+$I$ & Tr"agheitsmoment &
+$\operatorname{N}\cdot\operatorname{m}\cdot\operatorname{s}^2$ & $I =
+\int_V \varrho(\vec r) \cdot \vec r^2 \diff V$ & $\vec L = I \cdot
+\vec \omega$\\
+$\Ten I$ & Tr"agheitstensor &
+$\operatorname{N}\cdot\operatorname{m}\cdot\operatorname{s}^2$ & \multicolumn{2}{l}{$I_{ij} = \int_V \varrho(\vec r) \cdot(\delta_{ij}\vec r^2
+- r_i\cdot  r_j) \diff V$} \\
+$E_\text{rot}$ & Rotationsenergie & $\operatorname{J}$ & 
+\multicolumn{2}{r}{$E_\text{rot} = \frac{1}{2} I \vec \omega^2 = \frac{1}{2}\vec
+\omega^T\Ten I\vec \omega$}\\
+%
+\hline
+~ \\
+%
+%
+%
+~ & \textsc{Kreisbewegung}\\
+$\omega$ & Kreisfrequenz &
+$\frac{\operatorname{rad}}{\operatorname{s}} = \frac{1}{\operatorname{s}}$ & $\dot \varphi$ & $\omega
+= \frac{v}{r}$, ~ $\vec v = \vec \omega \times \vec r$\\
+$a_z$ & Zentripetalbeschleunigung &
+$\frac{\operatorname{m}}{\operatorname{s}^2}$ & $a_z = \frac{F_z}{m}$ &
+$a_z = \omega^2 r$\\
+%
+\hline
+~ \\
+%
+%
+%
+~ & \multicolumn{2}{l}{\textsc{Mechanik deformierbarer K"orper}}\\
+$\sigma$ & (Zug-/Druck)Spannung &
+$\frac{\operatorname{N}}{\operatorname{m}^2} = \operatorname{Pa}$ &
+$\sigma = \frac{F_N}{A}$ \\
+$\varepsilon$ & relative Dehnung & $1$ & $\varepsilon = \frac{\Delta
+  L}{L}$\\
+$\varepsilon_q$ & relative Querkontraktion\\
+$\mu$ & Poissonzahl & $1$ & $\mu =
+-\frac{\varepsilon_q}{\varepsilon}$ & $\frac{\Delta V}{V} = (1-2\mu)\varepsilon$\\
+$E$ & Elastizit"atsmodul &
+$\frac{\operatorname{N}}{\operatorname{m}^2}$ & $E =
+\frac{\sigma}{\varepsilon}$ \\
+$K$ & Kompressionsmodul & $\operatorname{Pa}$ & $\Delta p = - K
+\frac{\Delta V}{V}$ & $K = \frac{1}{\kappa}$\\
+$\tau$ & Scherspannung & $\operatorname{Pa}$ & $\tau =
+\frac{F_T}{A}$\\
+$\alpha$ & Scherwinkel & $1$ & $\alpha = \arctan\frac{\Delta L}{L}
+\approx \frac{\Delta L}{L}$ \\
+$G$ & Schermodul & $\operatorname{Pa}$ & $G = \frac{\tau}{\alpha}$\\
+. & Zusammenh"ange & \multicolumn{3}{r}{$\frac{E}{2G} = 1+\mu$ und
+  $\frac{E}{2K} = 1-2\mu$}\\
+%
+$p$ & Druck & $\operatorname{Pa}$ & $p = \frac{F}{A}$ & $p = \varrho g
+h$\\
+$F_A$ & Auftrieb & $\operatorname{N}$ & $F_A = (\varrho_\text{Wasser}
+- \varrho_r)gV$\\
+$\sigma$ & Oberfl"achenspannung &
+$\frac{\operatorname{J}}{\operatorname{m}^2}$ & $\sigma = \frac{\Delta
+  W}{\Delta A} = \frac{F}{\ell}$ \\
+. & \textsc{Joung-Laplace} & \multicolumn{3}{r}{$\Delta p = \sigma
+  \left ( \frac{1}{r_1} + \frac{1}{r_2}\right)$ ($r_i$:
+  Haupkr"umm'rad.)}\\
+%
+$\eta$ & Viskosit"at & $\operatorname{Pa}\cdot\operatorname{s}$ & $\eta
+= \frac{F_\| \cdot d}{A \cdot v_0}$ & $F_\text{Stokes} = 6\pi \eta
+r \cdot v$\\
+$I$ & Stromst"arke & $\frac{\operatorname{m}^3}{\operatorname{s}}$ & $I
+= \frac{\Delta V}{\Delta t} \to \frac{\diff V}{\diff t}$\\
+$R$ & Str"omungswiderstand & $\frac{\operatorname{Pa}\cdot
+  \operatorname{t}}{\operatorname{m}^3}$ & $R = \frac{\Delta p}{I}$ &
+$R_\text{Rohr} = \frac{8 \eta L}{\pi r^4}$\\
+%
+$R_e$ & \textsc{Reynolds}zahl & ~& $R_e = \frac{\varrho \cdot d \cdot
+  v}{\eta}$\\
+%
+\hline
+~ \\
+%
+%
+%
+~ & \textsc{Schwingungen und Wellen}\\
+$\lambda$ & Wellenl"ange & $\operatorname{m}$ \\
+$T$ & Periodendauer & $\operatorname{s}$\\
+$\nu$ & Frequenz & $\frac{1}{\operatorname{s}}$ & $\nu =
+\frac{1}{T}$\\
+$\omega$ & Kreisfrequenz & $\frac{1}{\operatorname{s}}$ & $\omega =
+\frac{2\pi}{T} = 2\pi \cdot \nu$\\
+$\Delta s$ & Gangunterschied & $\operatorname{m}$\\
+$\Delta \varphi$ & Phasendifferenz & $1$\\
+$k$ & Kreiswellenzahl & $\frac{1}{\operatorname{m}}$ & $k =
+\frac{2\pi}{\lambda}$ & $k = \frac{\Delta \varphi}{\Delta s}$\\
+$c$,$c_\text{Phase}$ & Phasengeschw. &
+$\frac{\operatorname{m}}{\operatorname{s}}$ & $c_\text{Phase} =
+\frac{\lambda}{T} = \lambda \cdot \nu$ & $c_\text{Phase} =
+\frac{\omega}{k}$\\
+$c_\text{Gruppe}$ & Gruppengeschwindigkeit &
+$\frac{\operatorname{m}}{\operatorname{s}}$ & $c_\text{Gruppe} =
+\frac{\Delta \omega}{\Delta k}$ & $c_\text{Gr} = c_\text{Ph} - \lambda
+\frac{\diff c_\text{Ph}}{\diff \lambda }$\\
+. & Konstr. Interferenz & \multicolumn{3}{r}{$\Delta s = \lambda \, n$,
+  ~ $\Delta \varphi = 2\pi\, n$}\\
+. & Destr. Interferenz & \multicolumn{3}{r}{$\Delta s = \lambda \, n +
+  \frac{\lambda}{2}$,
+  ~ $\Delta \varphi = 2\pi\, n + \pi$}\\
+. & Stehende Welle & \multicolumn{3}{r}{$\lambda^\text{(f,f)}_n =
+  \frac{2L}{n}$, ~ $\lambda^\text{f,l} = \frac{2L}{n - \frac{1}{2}}$}\\
+%
+\hline
+~ \\
+%
+%
+%
+~ & \textsc{Thermodynamik}\\
+$\bar u$ & mittlere therm. Teilchenenergie & $\operatorname{J}$ &
+$\bar u = \frac{f}{2} K_B \, T$ & $U = N \cdot \bar u$\\
+$U$ & Innere Energie & $\operatorname{J}$ & $U = \frac{f}{2} N K_B
+T$\\
+. & Ideale Gasgleichung & \multicolumn{3}{r}{$p\,V = N K_B \,T = n R
+  \, T$}\\
+$c$ & Spezifische W"armekapazit"at &
+$\frac{\operatorname{J}}{\operatorname{mol}\cdot \operatorname{K}}$ &
+$c = \frac{\Delta Q}{n \cdot \Delta T}$\\
+$C$ & W"armekapazit"at & $\frac{\operatorname{J}}{\operatorname{K}}$ &
+$C = \frac{\Delta Q}{\Delta T}$ & $C = c \cdot n$\\
+$C_V$ & isochore W. & ~ & $C_V = \frac{f}{2} N\, K_B$\\
+$C_p$ & isobare W. & ~ & $C_p = \frac{f+2}{2} N\, K_B$\\
+$\kappa$ & Adiabatenkoeffizient & ~ & $\kappa = \frac{C_p}{C_V}$ &
+$\kappa = \frac{f+2}{f}$\\
+. & Erster Hauptsatz & \multicolumn{3}{r}{$\diff U = \diff Q + \diff W$}\\
+$\diff W$ & Volumenarbeit & $\operatorname{J}$ & $\diff W = - p \diff
+V$\\
+. & Isotherm & \multicolumn{3}{r}{$\diff T = 0$, ~ $\Delta Q = - \Delta
+  W$}\\
+. & Isobar & \multicolumn{3}{r}{$\diff p = 0$, ~ $\Delta Q = \Delta
+  H$}\\
+. & Isochor & \multicolumn{3}{r}{$\diff V = 0$, ~ $\Delta Q = \Delta
+  U$}\\
+. & Zusammenhang & \multicolumn{3}{r}{$\kappa \cdot \gamma_p \cdot p = \gamma_V$}\\
+$H$ & Enthalpie & ~ & $H = U + pV$\\
+. & Adiabatisch & \multicolumn{3}{r}{$\diff Q = 0$, ~ $\Delta U = \Delta
+  W$, ~ $T\,V^{\kappa-1}=\const$, ~ $p\, V^\kappa = \const$}\\
+$\mathcal F$ & Freie Energie & $\operatorname{J}$ & $\mathcal F = U -
+TS$\\
+. & \multicolumn{4}{l}{$\mathcal F$ wird bei $V, T = \const$ minimiert.}\\
+$G$ & Freie Enthalpie & $\operatorname{J}$ & $G = H - TS$\\
+. & \multicolumn{4}{l}{$G$ wird bei $p, T = \const$ minimiert.}\\
+$\eta$ & Wirkungsgrad & $1$ & $\eta =
+\frac{\text{Nutzen}}{\text{Aufwand}}$ & $\eta^\text{\textsc{Carnot}} =
+1  -\frac{T_k}{T_w}$\\
+. & Reale Gasgleichung & \multicolumn{3}{r}{$\left ( p + \frac{n^2
+       a}{V^2} \right ) \cdot \left ( V - n b \right ) = n R \, T = N
+  K_B \, T$}\\
+. & Merkhilfe &
+\multicolumn{3}{r}{S. Kap. \ref{kap_guggenheim-quadrat-und-seine-vergewaltigung}
+  auf S. \pageref{kap_guggenheim-quadrat-und-seine-vergewaltigung}.}\\
+%
+\hline
+~\\
+%
+%
+%
+~ & \multicolumn{3}{l}{\textsc{Mikroskopische Thermodynamik}}\\
+%
+$n$ & Teilchendichte & $\frac{1}{\operatorname{m}^3}$ & $n = \frac{N}{V}$\\
+$\vec j$ & Teilchenstrom & $\frac{1}{\operatorname{m}^2 \cdot
+  \operatorname{s}}$ & $\vec j = \frac{N}{V}\cdot \vec v = n \cdot
+\vec v$\\
+$D$ & Diffusionskoeffizient & ~ & $\vec j_\text{Diff} = -D \vec\nabla \, n$\\
+$\sigma$ & Wirkungsquerschnitt & ~ & $\sigma =\frac{N^\text{abgelenkt}
+/ t}{N^\text{Anflug}/ (t\, A)}$\\
+$\lambda$ & mittlere Freie Wegl"ange & $\operatorname{m}$ & ~ &$\lambda =
+\frac{1}{\sigma \cdot \frac{N}{V}}$\\
+%
+%
+\hline
+~ \\
+%
+%
+%
+~ & \textsc{Elektrizit"atslehre} \\
+$F_C$, $F_E$ & \textsc{Coulomb}kraft & $\operatorname{N}$ & $\vec F =
+\frac{1}{4\pi \varepsilon_0\varepsilon_r} \frac{Q_1\,
+  Q_2}{r^2}\frac{\vec r}{r}$\\
+$\varepsilon_0$ & Influenzkonstante, Permittivität &
+$\frac{\operatorname{A}\cdot \operatorname{s}}{\operatorname{V}\cdot
+  \operatorname{m}}$ & $\varepsilon_0 = 8.854 \cdot
+10^{-12}\frac{\operatorname{A}\cdot
+  \operatorname{s}}{\operatorname{V}\cdot
+  \operatorname{m}}$\\
+$\varrho$ & Ladungsdichte &
+$\frac{\operatorname{C}}{\operatorname{m}^3}$ & $\varrho = \frac{Q}{V}
+= \frac{\diff Q}{\diff V}$\\
+$\sigma$ & Flächenladungsdichte &
+$\frac{\operatorname{C}}{\operatorname{m}^2}$ & $\sigma = \frac{Q}{A}
+= \frac{\diff Q}{\diff A}$\\
+$\lambda$ & Lineare Ladungsdichte &
+$\frac{\operatorname{C}}{\operatorname{m}}$ & $\lambda = \frac{Q}{L}
+= \frac{\diff Q}{\diff L}$\\
+$\vec E$ & E-Feld & $\frac{\operatorname{N}}{\operatorname{C}} =
+\frac{\operatorname{V}}{\operatorname{m}}$ & $\vec E = \frac{\vec
+  F}{q}$ & $\vec E = - \vec\nabla \varphi$, ~ $\vec\nabla \times \vec E
+= \vec 0$\\
+$\varphi$ & Elektrisches Potential & $\operatorname{V}$ &
+$\varphi(\vec r) = \frac{1}{4\pi \varepsilon_0 \varepsilon_r } \,
+\frac{Q}{r}$ & $U_{12} = \varphi_1-\varphi_2 = \int_{1}^2 \vec E \diff
+\vec s$\\
+$U$ & Spannung & $\operatorname{V}$ & $U = \Delta \varphi$ & $W = U
+\cdot q$\\
+$\Phi_E$ & Elektrischer Fluss & $\operatorname{C}$ & $\Phi_E = \int_A
+\vec E \, \diff \vec A$ & $\Phi_E = \frac{1}{\varepsilon_0} \int_V
+\varrho \diff V = \frac{Q}{\varepsilon_0}$\\
+. & Satz von \textsc{Gauss} & \multicolumn{3}{r}{$\int_V \vec\nabla
+  \vec f \diff V = \oint_{\partial V} \vec f \diff \vec A$}\\
+. & Satz von \textsc{Stokes} & \multicolumn{3}{r}{$\int_A
+  \vec\nabla\times \vec f \, \diff \vec A = \oint_\gamma \vec f \,
+  \diff \vec s$}\\
+. & E-Felder & \multicolumn{3}{r}{$E^\text{Platte} =
+  \frac{\sigma}{2\varepsilon_0}$, ~ $E^\text{Kondens} =
+  \frac{\sigma}{\varepsilon_0}$}\\
+$C$ & Kapazit"at & $\frac{\operatorname{C}}{\operatorname{V}} = F$ & $C = \frac{Q}{U}$\\
+. & Kapazit"aten & \multicolumn{3}{r}{$C^\text{Platte} =
+  \frac{\varepsilon_0 \, A}{d}$, ~ $E^\text{Draht} =
+  \frac{\lambda}{2\pi\, r\cdot \varepsilon_0}$, ~ $E^\text{Kugel
+    (Diel)} = \frac{Q}{4\pi\, r^2 \cdot \varepsilon_0}$}\\
+$W_C$ & Energie im Kondensator & $\operatorname{J}$ & $W_C =
+\frac{1}{2} C \, U^2$\\
+$w$, $\varrho_{E,V}$ & (r"auml) Energiedichte &
+$\frac{\operatorname{J}}{\operatorname{m}^3}$ & $w = \frac{W}{V}$ &
+$w^\text{Kondens} = \frac{1}{2} \varepsilon_0 E^2$\\
+$\varepsilon_r$ & Dielektrizit"atszahl & $1$ & $\varepsilon_r =
+\frac{U_0}{U_D} = \frac{C_D}{C_0}$ & $C = \frac{\varepsilon_0
+  \varepsilon_r \, A}{d}$\\
+$\vec p$ & (elektrisches) Dipolmoment & ~ & $\vec p = \vec q \cdot
+\vec d$ & $\varphi_p \approx \frac{1}{4\pi\varepsilon_0 \varepsilon_r
+  \left
+     ( \frac{\vec p \cdot \vec r}{r^3} \right )}$\\
+$\alpha$ & Polarisierbarkeit & $\frac{\operatorname{C}\cdot
+  \operatorname{m}^2}{\operatorname{V}}$ & $\vec p = \alpha \cdot \vec
+E^\text{lokal}$\\
+$\vec P$ & Polarisation & ~ & $ \vec P = \frac{1}{V} \sum_i \vec p_i$
+& $\vec P = n\, \vec p = n \, \alpha \, \vec E_D$\\
+$\sigma_p$ & Polarisationsladungen & ~ & von $\vec P$ an
+$\partial$Diel. erz. & $|\sigma_p| = \|\vec P\|$\\
+$\varrho_p$ & Polarisationsladungsdichte &
+$\frac{\operatorname{c}}{\operatorname{m}^3}$ & Durch
+Pol. erz. Ladungen & $\vec \nabla\,
+\vec P = - \varrho_p$\\
+$E_D$ & E-Feld im Diel. & ~ & $E_D = E_0 - \frac{P}{\varepsilon_0}$\\
+$\chi$ & Elektr. Suszeptibilit"at & ~ & $\vec P = \chi \cdot
+\varepsilon_0 \, E_D$ & $\chi = \frac{n\cdot \alpha}{\varepsilon_0}$\\
+. & Zusammenhang & \multicolumn{3}{r}{$1 + \chi = \varepsilon_r$, ~ 
+  $\chi = \frac{n \cdot \alpha}{\varepsilon_0}$}\\
+$\vec D$ & elektr. Flussdichte (D-Feld)\footnotemark & ~ & $\vec D =
+\varepsilon_0
+\, \vec E_D + \vec P$ & $\vec\nabla \, \vec D = \varrho_f$\\
+%
+~ \\
+   $I$ & Stromstärke & $\frac{\operatorname{C}}{\operatorname{s}} =
+   \operatorname{A}$ & $I = \frac{\diff Q}{\diff T}$\\
+   $\vec j$ & Stromdichte & $\frac{\operatorname{A}}{\operatorname{m}^2}$
+   & $j = \frac{I}{A}$ & $\vec j = \varrho \cdot \vec v$\\   
+   . & Kontinuit"atsgleichung & \multicolumn{3}{r}{$\nabla \vec j = \frac{\partial \vec
+       j}{\partial \vec r} = -\frac{\partial \varrho}{\partial t}$}\\
+$R$ & Widerstand & $\frac{\operatorname{V}}{\operatorname{A}} =
+\Omega$ & $R = \frac{U}{I}$\\
+$\sigma$ & Leifg"ahigkeit & $\frac{1}{\Omega \cdot \operatorname{m}}$
+& $\vec j = \sigma \cdot \vec E$ & $\sigma = \frac{1}{\rho}$\\
+$\rho$ & Spezifischer Widerstand & $\Omega \cdot \operatorname{m}$ &
+$R = \rho \cdot \frac{L}{A}$\\
+. & Schaltungen & \multicolumn{3}{r}{$R^\text{reihe} = \sum_i R_i$
+  und $R^\text{parallel} = \left ( \sum_i (R_i)^{-1} \right )^{-1}$}\\
+$P$ & Leistung & $\frac{\operatorname{J}}{\operatorname{s}} =
+\operatorname{W}$ & $P = \frac{\diff W}{\diff t}$ & $W = I \, U = R\,
+I^2 = \frac{U^2}{R}$\\
+%
+~ \\
+$\vec B$ & Magnetische Feldst"arke & $\frac{\operatorname{V}\cdot
+  \operatorname{s}}{\operatorname{m}^2} = \operatorname{T}$\\
+. & B-Feld \emph{um} Leiter & \multicolumn{3}{r}{$\vec B =
+  \frac{\mu_0}{2\pi}\, \frac{\vec I \times \vec r}{\|\vec r\|^2}$}\\
+$\Phi_B$ & Magnetischer Fluss & $\operatorname{T}\cdot
+\operatorname{m}^2$ & $\Phi_B = \int_A \vec B \diff \vec A$\\
+. & \textsc{Amp\`ere}'sches Gesetz & \multicolumn{3}{r}{$\oint_\gamma
+  \vec B \diff \vec s = \mu_0 \, I$}\\
+. & B-Feld einer Spule & \multicolumn{3}{r}{$B^\text{Spule} =
+  \frac{\mu_0 \, N \, I}{L}$}\\
+  . & \textsc{Biot-Savart}'sches Gesetz   & \multicolumn{3}{r}{$\diff
+    \vec B = \frac{\mu_0 \, I}{4\pi \, r^3} \left ( \diff \vec l
+       \times \vec r \right )$}\\
+$\vec \Apot$ & Vektorpotential von B & ~ & $\vec B = \vec \nabla
+\times \vec \Apot$ & $\vec\nabla \vec \Apot = 0$\\
+%
+~ \\
+  . &\textsc{Lorentz}kraft& \multicolumn{3}{r}{$\vec F = q \cdot \left
+       ( \vec E + \vec v \times \vec B \right )$, ~ $\vec F = L \, \left
+       ( \vec I \times \vec B \right )$}\\
+%
+%
+$\vec \mdm$ & Magnetisches Dipolmoment & $\operatorname{A} \cdot
+  \operatorname{m}^2$ & $\vec \mdm = I \cdot \vec
+  A$ & $\vec M = \vec \mdm \times \vec B$\\
+. & Dipole (analog $\vec p$, $\vec E$) & \multicolumn{3}{r}{$\vec M
+    = \vec \mdm \times \vec B$, ~ $E^\text{pot} = -\langle \vec \mdm |\vec
+    B \rangle$, ~ $\vec F =
+    \langle \vec \mdm  | \vec \nabla  \rangle \vec B$}\\
+  $\omega_c$ & Zyklotronfrequenz & $\frac{1}{\operatorname{s}}$ &
+  $\omega_c = \frac{q}{m} \cdot B$\\
+$U_i$ & Induktionsspannung & $\operatorname{V}$ & $U_i = - \dot
+\Phi_B$\\
+$L$ & Eigeninduktivit"at & $\frac{\operatorname{V}\cdot
+  \operatorname{s}}{\operatorname{A}} = \operatorname{H}$ & $L =
+\frac{\Phi_B}{I} = \frac{\diff \Phi_B}{\diff I}$ & $U_i = - L \cdot
+\dot I$\\
+. & $L$ einer Spule    & \multicolumn{3}{r}{$L^\text{Spule} = \mu_0 \,
+  \frac{N^2 \, A}{l}$}\\
+. & $L$ bei \textsc{Kirchhoff}& \multicolumn{3}{r}{$U = L \dot I$
+  steht positiv bei Verbrauchern.}\\
+$W_L$ & Energie in Spule & $\operatorname{J}$ & $W_B =
+\frac{1}{2}LI^2$\\
+$w_L$ & Energie\emph{dichte} in $L$ & ~ & $w = \frac{1}{2}\,
+\frac{1}{\mu_0} \, B^2$\\
+%
+~ \\
+%
+$\bar P$ & Wirkleistung & $\operatorname{W}$ & $\bar P = \langle P \rangle= \frac{1}{T}\,
+\int_0^T P(t) \diff t$ & $\langle \sin\omega t  \rangle =
+\frac{1}{2}$\\
+$U_e$, $I_e$ & Effektivwerte & ~ & $\bar P = U_e\cdot I_e$\\
+. & $\bar P$ mit Phase $\varphi$ & \multicolumn{3}{r}{$\bar P =
+  \frac{1}{2} \hat U \hat I \cdot \cos \varphi$}\\
+$Z$ & Komplexer Widerstand & $\Omega$ & $Z = \frac{U}{I} \text{ mit }
+U,I \in \mathbb C$\\
+. & $Z$s  & \multicolumn{3}{r}{$Z_L = \I \omega L$, ~ $Z_C =
+  \frac{1}{\I \omega C}$, ~ $Z_R = R$}\\
+ . & Transformator & \multicolumn{3}{r}{$ \frac{U_2}{U_1} =
+    - \frac{N_2}{N_1} = \frac{I_1}{I_2}$}\\
+%
+~ \\
+$\mu_r$ & Relative Permeabilit"at & $1$ & $\mu_r = \frac{B}{B_0}$\\
+$\vec M$ & Magnetisierung &
+$\frac{\operatorname{A}}{\operatorname{m}}$ & $\vec M =
+\frac{1}{V}\sum_i \vec \mdm^i$\\
+$\vec B$ & B-Feld in Materie & ~ & $\vec B = \vec B_0 + \mu_0 \cdot
+\vec M = \mu_0 \left ( \vec H + \vec M \right )$\\
+$\vec H$ & Magnetische Erregung & ~ & $\vec B = \mu_r \vec B_0 = \mu_0
+\mu_r \, \vec H_0$\\
+$\chi$ & Magnet. Suszeptibilit"at & $1$ & $\vec M = \chi \cdot \vec
+H_0$\\
+%
+~\\
+$I_v$ & Verschiebungsstrom & $\operatorname{A}$ & $I_v = A\,
+\varepsilon_0 \, \frac{\partial E}{\partial t}$\\
+$\vec j_v$ & Versch'stromdichte &
+$\frac{\operatorname{A}}{\operatorname{{m}}^2}$ & $\vec j_v =
+\varepsilon_0 \, \frac{\partial \vec E}{\partial t}$\\
+%
+~ \\
+%
+ . & $Q$ ist Quelle von $\vec E$ & \multicolumn{3}{r}{$\oint_A \vec E \diff \vec A = \frac{1}{\varepsilon_0} \int_V
+   \varrho_q \diff V$ bzw. $ \vec \nabla \, \vec E =
+   \frac{1}{\varepsilon_0} \varrho_q$}\\
+   . & $\vec B$ ist quellenfrei& \multicolumn{3}{r}{$\oint_A \vec B \diff
+     \vec A = 0$ bzw. $\vec \nabla \, \vec B = 0$}\\
+   . & Induktionsgesetz & \multicolumn{3}{r}{$\oint_\gamma \vec E \diff \vec s = -\frac{\partial }{\partial t}
+     \int_A \vec B \diff \vec A$ bzw. $\vec \nabla \times \vec E = - \frac{\partial }{\partial t}
+     \vec B$}\\
+   . & Bewegte $Q$ erzeugt $\vec B$ & \multicolumn{3}{r}{$\vec \nabla \times \vec B = \mu_0 \left ( \vec j +
+        \varepsilon_0 \frac{\partial }{\partial t} \vec E \right)$
+     bzw. $\vec \nabla \times \vec B = \mu_0 \left ( \vec j +
+        \varepsilon_0 \frac{\partial }{\partial t} \vec E \right)$}\\
+%
+~ \\
+%
+$w_{em}$ & Energiedichte einer EMW &
+$\frac{\operatorname{J}}{\operatorname{m}^3}$ & $w_{em} =
+\varepsilon_0 \, E^2$ \\
+$S$ & Energiestromdichte &
+$\frac{\operatorname{J}}{\operatorname{s}\cdot \operatorname{m}^2}$ &
+$S = \frac{W}{t \, A} = \frac{w \, l}{t}$\\
+$P$ & Abstrahlung Dipol & ~  & $   P(r) = \oint_A \vec S \diff \vec A = \frac{p_0^2 \cdot
+     \omega^4}{6\pi \varepsilon_0 c_0^3} \sin^2(\omega (t -
+   \frac{r}{c_0}) )$ & $\langle P  \rangle = \frac{p_0^2 \cdot \omega^4}{12 \pi \varepsilon_0 c_0^3} ~
+   ~ \sim ~ \omega^4$\\
+. & Wellengleichung & \multicolumn{3}{r}{$\Delta \vec E -
+  \frac{1}{c_0^2}\, \frac{\partial ^2}{\partial t^2}\vec E$}\\
+. & Wellenbeschreibung & \multicolumn{3}{r}{$\vec E = \vec E(\vec r,t)
+  = \vec A_0 \, \E^{\I (\vec k \vec r - \omega t)}$}\\
+. & Zirkulare Polarisation & \multicolumn{3}{r}{$E = (\hat E, \I\,
+  \hat E, 0)^T \cdot \E^{\I (kz - \omega t)}$}\\
+. & EMW: B, E-Feld & \multicolumn{3}{r}{$B = \frac{1}{c_0} E$, ~ $\vec B
+  = \frac{1}{\omega}\, \left ( \vec k \times \vec E \right )$}
+\end{longtable}
+%\end{tabular}
+%\end{table}
+\footnotetext{Das D-Feld entspricht einem E-Feld, welches nur duch
+  freie Ladungen erzeugt wurde (und mit einer konstanten multipliziert wird).}
+\end{landscape}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
+

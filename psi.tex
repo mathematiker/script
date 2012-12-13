@@ -1,0 +1,315 @@
+\documentclass[twoside,a4paper]{book}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+% \usepackage[top=2.5cm,bottom=1.75cm,right=2cm,left=2.3cm]{geometry}
+\usepackage{lscape} % Seiten im Querformat
+\usepackage{longtable}
+% \usepackage{wrapfig}
+\usepackage{shadethm}
+\usepackage{color}
+\usepackage{floatflt}
+\usepackage{subfigure}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb}
+\usepackage{nicefrac}
+\usepackage{multicol}
+\usepackage{enumerate}
+% zu verwenden mit \begin{multicols}{3} 3 steht fuer die
+%    spalenzahl \end{multicols}
+
+% \setlength{\parindent}{0pt} %Absatz-Einr"uckung
+% \setlength{\parskip}{12pt} %Absatz-Abst"ande
+
+
+%%% Index %%%
+\usepackage{makeidx}
+\makeindex
+
+%\usepackage{a4wide}
+
+
+
+%%% Zeilenabstand %%%
+% \usepackage{setspace} %Zeilenabstand bestimmbar in Dokumentenabschnitten
+% oder:
+% \linespread{$$Verh"altnis_zu_normalem_Zeilenabstand$$} %Wirkt global
+
+%% Tabellen %%
+\usepackage{booktabs}
+\setlength{\tabcolsep}{5pt}
+%Abst zw Spalten
+\renewcommand{\arraystretch}{1.4}
+%Vielfacher Spaltenabst zw Zeilen
+
+
+%% Aufzaehlungen -- description %%
+\usepackage{expdlist}
+
+
+
+
+%Kopfzeile: \pagestyle{myheadings} %Kopfzeile hinzuf"ugen
+%\markright{$$Kopfzeile$$} %Inhalt der Kopfzeile
+
+%\pagestyle{fancy} %Genauer zu definierende Kopfzeile
+%\fancyhead[OL,OC,OR,EL,EC,ER]{} %O: ungerade seiten, E: gerade Seiten,
+%\fancyfoot[OL,OC,OR,EL,EC,ER]{} %L:Links, C:Mitte, R:Rechts (leere Klammer {} l"oscht)
+%\renewcommand{\headrulewidth}{dicke} %Dicke der Linie oben
+%\renewcommand{\footrulewidth}{dicke} %Dicke der Linie unten
+%\addtolength{\headwidth}{l"ange} %Breite wird vergr"o"sert (ragt "uber Text raus)
+%\addtolength{\headheight}{l"ange} %H"ohe wird vergr"o"sert
+
+%\newtheorem{$$k"urzel$$}{$$Name im
+%  Text$$} %Definiert eigene Umgebung (begin{k"urzel}...end)
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,bookmarksnumbered=true,breaklinks=true,pdfstartview=FitH]{hyperref}
+\hypersetup{pdftitle="ExPhys1Script", pdfauthor=Kopp}
+
+
+
+%Eigene Komandos
+\newcommand{\zitat}[1]{{\slshape \sffamily #1}}
+         %hebt Zitate deutlich ab
+\newcommand{\diff}{\ensuremath{\, \mathrm{d}}}
+\newcommand{\Ve}[1]{\ensuremath{\vec{#1}}}
+\renewcommand{\vec}[1]{\ensuremath{\boldsymbol{#1}}}
+\newcommand{\Grad}{\ensuremath{\operatorname{grad}}}
+\newcommand{\Mat}[1]{\ensuremath{\mathbf{#1}}}
+\newcommand{\Ten}[1]{\ensuremath{{\mathcal{#1}}}}
+
+\newcommand{\const}{\ensuremath{\text{\emph{const}}}}
+
+\newcommand{\Ipl}{$\Rightarrow$}
+\newcommand{\Impl}{$\Rightarrow$}
+
+\newcommand{\Laplace}{\ensuremath{\Delta \,}}
+
+\newcommand{\e}{\ensuremath{\operatorname{e}}}
+\newcommand{\E}{\ensuremath{\operatorname{e}}}
+\newcommand{\I}{\ensuremath{\operatorname{i}}}
+
+
+
+%% Besonderes
+% Vektorpotential
+\newcommand{\Apot}{\ensuremath{\mathcal{A}}}
+\newcommand{\mdm}{\ensuremath{\mu}}
+    % magnetisches Dipolmoment
+
+
+%% Formatierung
+
+% Palatino for rm
+\renewcommand{\rmdefault}{ppl} % rm
+\linespread{1.05}        % Palatino needs more leading (space between lines
+% Euler for math
+% \usepackage{euler} % math
+
+
+%\newshadetheorem{Def}{Definition}[section]
+\newshadetheorem{Wichtig}{Wichtig!}
+
+\newshadetheorem{Defi}{Definition}[chapter]
+\newenvironment{Def}[1][]{%
+\definecolor{shadethmcolor}{rgb}{.95,.95,.95}%
+\definecolor{shaderulecolor}{rgb}{0.8,0.8,0.8}%
+\setlength{\shadeboxrule}{1pt}%
+\begin{Defi}[#1]%
+ }{\end{Defi}}
+
+
+\newenvironment*{Beispiel}[0]{$\diamondsuit$\sffamily}{ \hfill $\diamondsuit$}
+
+\newcommand{\abs}[0]{\bigskip \noindent}
+
+
+
+
+
+
+\setcounter{secnumdepth}{4} %Paragraph wird nummeriert
+%\def\theparagraph{\textit{\mdseries\underline{\roman{paragraph}.}}}
+
+\def\theparagraph{$\rhd$ (\alph{paragraph})} 
+%Paragraph bekommt statt nummer ein Dreieck
+
+%\def\theparagraph{$\rhd$ (\arabic{subsubsection} \alph{paragraph})}
+
+
+% \usepackage{sectsty}
+% \paragraphfont{\sffamily}
+
+%\def\thefigure{\arabic{section}.\arabic{figure}\textsuperscript{\arabic{page}}}
+%\def\theequation{\arabic{section}.\arabic{equation}\textsuperscript{\arabic{page}}}
+
+
+
+
+%% Captions %%
+% FOrmatiert die Captions bei Bildern um
+\usepackage[format=hang,%tab unter Abbildung 7:
+%singlelinecheck=false,%einzeiler werden nicht zentriert.
+%font={%Schriftformatierung
+labelfont={%FOrmatierung von ``Abbildung''
+bf,it%fett und kursiv
+},%
+textfont={%Formatierung von Text
+%small,%kleinere schrift
+%it%kursiv
+sl
+},%
+]{caption}
+
+
+
+
+%% Referenzen %%
+%\usepackage[german]{varioref}
+% mit \vref{label} wird eine individuelle
+% Bezeichnung verwendet; je nach dem,
+% wie weit label und vref auseinander liegen.
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+\title{Experimentalphysik I}
+
+\author{Michael Kopp}
+
+\date{Version $\beta ~ 1.4$ ~ --- ~ \today}
+
+
+
+
+
+% \begin{titlepage}
+%    \author{Michael Kopp}
+% \title{Experimentalphysik I}
+% \end{titlepage}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+\frontmatter
+
+%\maketitle
+
+\begin{titlepage}
+\begin{center}
+\vspace{3em}
+
+{\large \sc  Michael Kopp/mathematiker}\\[8em]
+~ ~ \includegraphics[width=0.45\textwidth]{psi}\\[5em]
+{\huge \bf Script}\\[0.03\textheight]
+{zur Vorlesung}\\[0.08\textheight]
+%{\fontfamily{phv}\fontsize{50px}{1px} \selectfont Experimentalphysik
+%I}\\
+\hrule ~\\[0.4cm]
+{\bf \fontsize{35px}{1px} \selectfont Experimentalphysik I}\\[0.4cm]
+\hrule ~ \\[8em] %12
+{bei Prof. C. Bechinger, Uni Stuttgart, 2012/13}
+
+\vfill
+
+{ \today \\(EDIT 2012/13)}
+\end{center}
+\end{titlepage}
+
+
+\addcontentsline{toc}{chapter}{Inhaltsverzeichnis}
+\tableofcontents
+
+
+\sloppy		
+           % Macht keine BadBoxes
+
+%Zeilenabstand:
+%Wenn "`setspace"' aktiviert:
+	%\singlespacing
+	%\onehalfspacing
+	%\doublespacing
+
+%\setlength{\parskip}{8pt}
+%\setlength{\parindent}{0pt}
+
+
+
+
+
+
+% \setcounter{chapter}{-1}
+
+\input{vorwort2}
+\input{vorwort}
+\input{einleitung}
+
+\mainmatter
+
+\input{groessen}
+\input{kinematik}
+\input{mech_punkt}
+\input{mech_starr}
+\input{mech_deform}
+\input{schwingung}
+\input{thermo}
+\input{mikrothermo}
+\input{elek}
+
+\backmatter
+
+
+
+%%% Index %%%
+
+
+\newcommand{\orgtheindex}{}
+\let\orgtheindex\theindex
+\let\orgendtheindex\endtheindex
+\def\theindex{%
+\def\twocolumn{\begin{multicols}{2}}%
+\def\onecolumn{}%
+\cleardoublepage
+\orgtheindex
+}
+\def\endtheindex{%
+\end{multicols}%
+\orgendtheindex
+\cleardoublepage
+}
+
+
+
+\addcontentsline{toc}{chapter}{Index}
+\printindex 
+
+
+\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+\listoffigures
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\input{formelzeichen}
