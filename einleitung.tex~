@@ -40,7 +40,7 @@ Es gilt die Heisenbergsche Unschärferelation:
 \[
 \underbrace{\Delta x}_{\text{Ortsunschärfe}} \cdot \underbrace{\Delta p}_{\text{Impulsunschärfe}}
 \]
- \begin{figure}
+ \begin{figure}[h]
  \includegraphics[scale=0.5]{bilder/fig3}
  \end{figure}
 \end{itemize}

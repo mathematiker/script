@@ -96,7 +96,7 @@ zerfallende Stoffe und deren Halbwertszeit.
 \]
 So lässt sich die Sekunde beispielsweise definieren als die  Dauer für eine Schwingung des Federpendels der Länge $l=24,8 \text{cm}$.
 \item Quarzplättchen besitzen eine Frequenz aus dem $kHz$-Bereich.
-% \begin{figure}
+% \begin{figure}[h]
 % \includegraphics[scale=0.5]{fig5.png}
 % \end{figure}
 
@@ -116,9 +116,9 @@ Es gilt die Proportionalität $\frac{dN(t)}{dt} \sim N(t) $, dabei zerfallen die
   N(T)=N_0 \cdot e^{-\lambda t}, \qquad N_0:= N(0), [\lambda]=\frac{1}{s}
  \end{equation*}
 
-  \begin{figure}
-   \includegraphics[scale=0.5]{bilder/fig6}
-  \end{figure}
+%  \begin{figure}[h]
+%   \includegraphics[scale=0.5]{fig6.png}
+%  \end{figure}
 
 \begin{align*}
   \frac{N_0}{2} &= N_0 \cdot e^{-\lambda t_{\frac 1 2}}\\
@@ -126,17 +126,16 @@ Es gilt die Proportionalität $\frac{dN(t)}{dt} \sim N(t) $, dabei zerfallen die
   t_{\frac 1 2} &= - \frac{\ln 0.5}\lambda = {\ln 2}{\lambda} 
 \end{align*}
 
- \begin{ex*}
+ \begin{exs*}
   \begin{enumerate}[a)]
    \item $\ce{^{224}_{88} Tn} \rightarrow \ce{^{220}_{86} Ru} + \alpha, \qquad \alpha=\ce{^4_2 He}$ mit Halbwertszeit $t_{\frac 1 2}=556s$
    \item $\beta$-Zerfall: $\ce{^{14}_6 C} \to \ce{^{14}_7 N} + e^- \bar v_l$ mit Halbwertszeit $t_{\frac 1 2}=5730 a$  
  \end{enumerate}
- \end{ex*}
+ \end{exs*}
 \item Radio-Carbon-Methode \\
  Kohlenstoff liegt in der Athmosphäre in den Isotopen $\ce{^{12}_6 C}, \ce{^{13}_6 C}, \ce{^{14}_6 C}$ vor.
 
-\begin{table}
-\centering
+\begin{table}{ht}
  \caption{Verteilung in Atmosphäre}
  \begin{tabular}{c|c}
   $\ce{^{12} C}$&  $98,89\%$ \\
@@ -177,9 +176,6 @@ Laserinterferomenter, bei denen man ausnutzt, dass sich Lichtwellen
 bei bestimmten Bedingungen ausl"oschen und die Lichtwellenl"ange bekannt
 ist.
 
-\begin{Beispiel}
- 
-\end{Beispiel}
 
 
 

@@ -135,8 +135,7 @@ Es gilt die Proportionalität $\frac{dN(t)}{dt} \sim N(t) $, dabei zerfallen die
 \item Radio-Carbon-Methode \\
  Kohlenstoff liegt in der Athmosphäre in den Isotopen $\ce{^{12}_6 C}, \ce{^{13}_6 C}, \ce{^{14}_6 C}$ vor.
 
-\begin{table}
-\centering
+\begin{table}{ht}
  \caption{Verteilung in Atmosphäre}
  \begin{tabular}{c|c}
   $\ce{^{12} C}$&  $98,89\%$ \\
