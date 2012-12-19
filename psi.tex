@@ -22,6 +22,7 @@
 % \setlength{\parindent}{0pt} %Absatz-Einr"uckung
 % \setlength{\parskip}{12pt} %Absatz-Abst"ande
 
+\usepackage{changepage}
 
 %%% Index %%%
 \usepackage{makeidx}
@@ -119,8 +120,7 @@
 % Euler for math
 % \usepackage{euler} % math
 
-\newtheorem{ex*}{Beispiel}
-\newtheorem{exs*}{Beispiele}
+\newtheorem{ex*}{Beispiel}[section]
 
 %\newshadetheorem{Def}{Definition}[section]
 \newshadetheorem{Wichtig}{Wichtig!}
@@ -133,15 +133,22 @@
 \begin{Defi}[#1]%
  }{\end{Defi}}
 
+\newenvironment*{Beispiel}[0]{\vspace{0.3cm}$\diamondsuit$\sffamily}{ \hfill $\diamondsuit$}
 
-\newenvironment*{Beispiel}[0]{$\diamondsuit$\sffamily}{ \hfill $\diamondsuit$}
+
 
 \newcommand{\abs}[0]{\bigskip \noindent}
 
 \newcommand{\fixme}{\text{\textit{FIXME}}}
 
+\newcommand{\my}{\mu}
 
-
+\newenvironment{seg}[1]{
+	\underline{#1}
+	\begin{adjustwidth}{1.3em}{0em}
+}{
+	\end{adjustwidth}
+}
 
 \setcounter{secnumdepth}{4} %Paragraph wird nummeriert
 %\def\theparagraph{\textit{\mdseries\underline{\roman{paragraph}.}}}
@@ -282,12 +289,12 @@ sl
 \input{groessen}
 \input{kinematik}
 \input{mech_punkt}
-\input{mech_starr}
-\input{mech_deform}
-\input{schwingung}
-\input{thermo}
-\input{mikrothermo}
-\input{elek}
+ \input{mech_starr}
+ \input{mech_deform}
+ \input{schwingung}
+% \input{thermo}
+% \input{mikrothermo}
+% \input{elek}
 
 \backmatter
 

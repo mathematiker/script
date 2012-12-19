@@ -116,7 +116,7 @@ Es gilt die Proportionalität $\frac{dN(t)}{dt} \sim N(t) $, dabei zerfallen die
   N(T)=N_0 \cdot e^{-\lambda t}, \qquad N_0:= N(0), [\lambda]=\frac{1}{s}
  \end{equation*}
 
-  \begin{figure}
+  \begin{figure}[ht]
    \includegraphics[scale=0.5]{bilder/fig6}
   \end{figure}
 
@@ -177,8 +177,80 @@ Laserinterferomenter, bei denen man ausnutzt, dass sich Lichtwellen
 bei bestimmten Bedingungen ausl"oschen und die Lichtwellenl"ange bekannt
 ist.
 
+\begin{table}[ht]
+\centering
+\caption{Größenordnung von Längen}
+ \begin{tabular}{l r}
+  Erde-Fixstern & $4\cdot 10^{16} \m$\\
+  Erde-Sonne & $1.5 \cdot 10^{11} \m$\\
+ Erdradius & $63 \cdot 10^6 \m $\\
+ Sichtbares Licht (Wellenlänge) & $ 500\cdot 10^{-9}$m \\
+ Atomdurchmesser & $10^{-10}$m  \\
+ Kerndurchmesser & $10 ^{-15}$m
+ \end{tabular}
+ \end{table}
+ \newpage
 \begin{Beispiel}
+\begin{itemize}
+\item Geschichte des Meters:\\
+1799 wurde der Meter definiert durch $1 \m \hat = \frac{1}{400000000}$ des durch Paris gehenden Großkreises ($40\cdot 10^3$ km). 1795 wurde ein Prototyp des Urmeters aus Messing hergestellt.
+
+Einige Jahre später wurde der Urmeter aus Platin hergestellt und in einem Stahlschrank im französischen Nationalarchiv 1799 verschlossen. Heute wird es in einem Tresor des Internationalen Büros für Maße und Gewicht (BIPM) in S\`evres aufbewahrt.
+
+1889 wurde das Urmeter von der Generalkonferenz für Maß und Gewicht durch das Urmeter einer Platinlegierung($90\% \ce{Pt}$ und $10\% \ce{Ir}$) ersetzt.
+
+ Seit 1983 ist der Meter über den Lichtweg definiert:
+ \[
+  1\m=\text{ Länge des Weges Weges, den Licht im Vakuum in $\frac{1}{299792485} s$ zurücklegt.}
+ \]
+
+\item Messung von Abständen mittels Triangulation:\\
+ \begin{figure}[!ht]
+  \includegraphics[scale=0.5]{bilder/fig7}
+ \end{figure}
+ Sinussatz: $\frac{c}{\sin\gamma} = \frac{a}{\sin{\beta}}=\frac{a}{\sin\alpha}$ \\
  
+ \begin{itemize}
+  \item $\alpha, \beta$ bekannt $\to \gamma$ bekannt
+  \item $c$ bekannt, dann lässt sich $a$ bzw. $b$ berechnen zu:
+\begin{align*}
+a&=c\cdot \frac{\sin \alpha}{\sin \gamma}\\
+b&=c\cdot \frac{\sin \beta}{\sin \gamma}
+\end{align*}
+ \end{itemize}
+\newpage
+\item Abstand-Erde-Mond \\
+ \begin{figure}[!h]
+  \includegraphics[scale=0.5]{bilder/fig8}
+ \end{figure}
+
+\item Abstand Erde-Sonne\\
+ Als Basis (c) wähle Erde-Mond
+ \begin{figure}[!h]
+  \includegraphics[scale=0.5]{bilder/fig9}
+ \end{figure}
+ Bei Halbmond besitzt $\beta=90^\circ$.  Den Abstand Erde-Mond lässt sich messen. Dann genügt es Den Winkel zwischen Mond und Sonne auf der Erde messen und damit ergibt sich der Abstand zum Mond.
+
+\item LIDAR (Light Detection and raging)\\
+ \begin{figure}[!h]
+  \includegraphics[scale=0.5]{bilder/fig10}
+ \end{figure}
+ \[
+ T=\frac{2L}{c}
+ \]
+ 
+\item Messungen kleiner Entfernungen Laserinterferometer (\emph{Michelson-Interferometer})
+
+%  \begin{figure}[ht]
+%   \includegraphics[scale=0.7]{fig11}
+%  \end{figure}
+
+ \[
+  \Delta s= 2 |s_1-s_2|
+ \]
+
+ Die Verschiebung um $\frac{20 \my m}{\text{64 Maxima}}=0.625 \to \lambda=630\my \m $
+\end{itemize}
 \end{Beispiel}
 
 
@@ -241,13 +313,14 @@ Verf"ugung, die Grundlage sind f"ur weitere Teilgebiete der Physik:
 
 \begin{Def}[Systematischer Messfehler]\index{Systematischer
      Messfehler}
-     Stets gleiche Abweichung
+     Als \emph{systematischer Fehler} (auch systematische Abweichung oder -Verzerrung; engl. systematic error oder bias) werden in der Technik, den Natur- und anderen Wissenschaften Messfehler bezeichnet, die sich bei wiederholter Messung nicht im Mittel aufheben. Diese Fehler sind prinzipiell vermeidbar.
 \end{Def}
 
 \textbf{Ursachen} k"onnen sein:
 \begin{itemize}
-     \item Fehler im Messinstrument
-     \item Rundungen / Vereinfachungen in den Formeln
+     \item ein falsch geeichtes Messinstrument
+     \item Nichtberücksichtigen von \emph{Konstanten} äußerer Einflüsse
+     \item Rundungen / Vereinfachungen in den Formeln (zum Beispiel die Anwendung der Kleinwinkelnäherungen $ \sin \alpha \approx \alpha $ und $ \cos \alpha \approx 1 $
 \end{itemize}
 
 
@@ -256,13 +329,13 @@ Verf"ugung, die Grundlage sind f"ur weitere Teilgebiete der Physik:
 \subsection{Statistische (zuf"allige) Messfehler}
 
 \begin{Def}[Statistische Messfehler]\index{Statistische Messfehler}
-   Die Abweichtung ist \emph{zuf"allig} d.h. liefert verschiedene
-   Werte.
+   Als \emph{zufällige Abweichungen} oder \emph{Zufallsfehler} werden die Abweichungen der Messwerte von ihrem Mittelwert bezeichnet. 
+   Zufällige Abweichungen streuen in Betrag und Vorzeichen. Sie sind im Allgemeinen nicht vermeidbar.
 \end{Def}
 
 \textbf{Ursachen} k"onnen sein:
 \begin{itemize}
-     \item Ablesefehler durch Beobachter
+     \item Ablesefehler durch Beobachter (wobei diese natürlich auch systematisch sein können, durchaus sind aber auch Streuungen beim Ablesen denkbar)
      \item (statistische) Schwankungen "au"serer Einfl"usse
 \end{itemize}
 
@@ -285,15 +358,52 @@ $\bar x$ selbst.
 
 Um die W"ahrscheinlichkeit $p$ zu berechnen, mit der ein bestimmter
 Messwert $x$ auftreten sollte, verwendet man die
-\textsc{Gauss}'sche-Normalverteilung\index{Normalverteilung}:
+\textsc{Gauss}'sche-Normalverteilung\index{Normalverteilung}. Diese besitzt die Wahrscheinlichkeitsdichte:
 \begin{equation}
    p(x) = \frac{1}{\sqrt{2\pi} \cdot \sigma} \cdot 
    \exp\left ( \frac{- (x-\bar x)^2}{2\sigma^2} \right )
 \end{equation}
+Als Dichtefunktion besitzt $ p $ die Eigenschaft:
+\[
+P(]-\infty, \infty[)=\int_{-\infty}^{\infty} p(x)\, dx=1
+\]
 
+\subsection{Exkurs: Wahrscheinlichkeitstheorie $ (\bigstar) $}
+\begin{Def}[Wahrscheinlichkeitstheorie aus WIKIPEDIA]
+Die Wahrscheinlichkeitstheorie oder Wahrscheinlichkeitsrechnung ist ein Teilgebiet der Mathematik, das aus der Formalisierung der Modellierung und der Untersuchung von Zufallsgeschehen hervorgegangen ist. Gemeinsam mit der mathematischen Statistik, die anhand von Beobachtungen zufälliger Vorgänge Aussagen über das zugrunde liegende Modell trifft, bildet sie das mathematische Teilgebiet der Stochastik. Die zentralen Objekte der Wahrscheinlichkeitstheorie sind zufällige Ereignisse, Zufallsvariablen und stochastische Prozesse.
+\end{Def}
+Im Folgenden möchten wir einige wahrscheinlichkeitstheoretische Begriffe kurz erklären. 
+\begin{description}
+\item[Wahrscheinlichkeit:] Die Wahrscheinlichkeit (Probabilität) ist eine Einstufung von Aussagen und Urteilen nach dem Grad der Gewissheit (Sicherheit). Im Zusammenhang mit der Maßtheorie bezeichnen wir ein Maß $ P $ als Wahrscheinlichkeitsmaß, ein Maß, dass in seiner Gesamtheit ihrer Ereignisse 1 ist.
+\item[Maß:] Wir bezeichnen $ \my: C \to [0, \infty] $ mit $ A_i \in C $, wobei $ C $ die Menge der möglichen Ereignisse bezeichnet, als Maß falls gilt:
+\begin{itemize}
+\item $ \my(\emptyset)=0 $
+\item  $ \sigma- $Additivität: $ \my\left ( \bigcup_{i\ge 1} A_i \right )= \sum_{i\ge 1} \my(A_i) $
+\end{itemize}
+\item[Verteilungsdichte:] Mittels der Verteilungsdichte $ f $ können wir die Wahrscheinlichkeit des Ereignisses berechnen durch:
+\[
+P([a,b])=\int_a^b f(x) \, dx
+\]
+Bestimmte Verteilungsarten (z.B.: unitäre (bedeutet: gleichverteilt) Verteilung, Normal-/GAUSS-Verteilung)
+\item[Verteilungsfunktion:] Auch die Verteilungsdichte $ F $ ermöglicht uns die Berechnung der Wahrscheinlichkeit
+\[
+P([a,b])=F(b)-F(a)
+\]
+Die Verteilungsfunktion hat einige Grundlegende,  sie wächst monoton und ist rechtsseitig stetig. Dies liegt natürlich nahe, da es sonst negative Wahrscheinlichkeiten gäbe. Auch diese hängen von der Art der Verteilung (dies entspricht im Wesentliche die Art des Zufalls) ab.
+\item[Zähldichte] Ist die Grundmenge der Ereignisse endlich, so bezeichnen wir den Wahrscheinlichkeitsraum als diskret (so zum Beispiel beim Münzwurf oder Würfel). In diesem Fall,  können wir für die Einzelergebnisse Wahrscheinlichkeiten angeben wir bezeichnen die Zugehörige Funktion $ f $ als Zähldichte. Es gilt:
+\[
+P(\{x\})=f(x)
+\]
+\item[Unabhängigkeit] Wir sagen zwei Ereignisse $ A, B $ sind unabhängig, wenn gilt:
+\[
+P(A\cap B)=P(A)\cdot P(B)
+\]
+Dies entspricht der Baumregel für diskrete Wahrscheinlichkeitsräume.  Also, sind Ereignisse unabhängig, wenn die Messungen nicht voneinander abhängen, also in keiner Relation zueinander sind. Ein Beispiel wäre das Würfeln mit zwei Würfeln. 
+\end{description}
 
-
-
+\begin{Wichtig}
+Weder bedeutet Wahrscheinlichkeit 0, dass ein Ergebnis nicht eintreffen kann, noch sagt die Wahrscheinlichkeit 1, dass das Ergebnis stets eintrifft. Dies kann man sich daran verdeutlichen, dass es "`unendlich"' unwahrscheinlich, dass wenn man von einem Hochhaus einen Stein runterwirft, ihn exakt an einem gewissen Punkt wiederzufinden, jedoch kann tatsächlich jeder beliebige Punkt (zu mindest theoretisch) erreicht werden. Dagegen ist es "`unendlich"' wahrscheinlich, dass der Stein außerhalb des Punkts aufkommt, doch auch dies ist natürlich nicht notwendigerweise der Fall.  Für Wahrscheinlichkeit 1 sprechen wir von einer $ P $-fast sicheren Eigenschaft.  
+\end{Wichtig}
 
 
 
