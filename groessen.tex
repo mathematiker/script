@@ -363,10 +363,30 @@ Messwert $x$ auftreten sollte, verwendet man die
    p(x) = \frac{1}{\sqrt{2\pi} \cdot \sigma} \cdot 
    \exp\left ( \frac{- (x-\bar x)^2}{2\sigma^2} \right )
 \end{equation}
+\fixme[Graph der Dichtefunktion fehlt]
+
 Als Dichtefunktion besitzt $ p $ die Eigenschaft:
 \[
 P(]-\infty, \infty[)=\int_{-\infty}^{\infty} p(x)\, dx=1
 \]
+Die Wahrscheinlichkeit $P$, das x im Intervall $\bar x \pm \sigma$ streut ist damit. 
+\[
+\int\limits_{\bar x-\sigma}^{\bar x+\sigma} p(x)=0,683
+\]
+Man bezeichnet dies auch als \emph{statistische Sicherheit} bzw. \emph{Vertrauensgrenze} $P$ für $\delta=\sigma$.
+
+\begin{table}[h]
+\centering
+\caption{Statistische Sicherheit bzw. Vertrauengrenze $P$ für $\delta$}
+\begin{tabular}{c|c}
+$\delta[\sigma]$ & $P=\int\limits_{\bar x-\delta}^{\bar x+\delta} p(x) dx$ \\ \hline
+1 & 0,683 \\
+0,676 & 0,5 \\
+1,96 & 0,95 \\
+3,0 & 0,997
+\end{tabular}
+\end{table}
+
 
 \subsection{Exkurs: Wahrscheinlichkeitstheorie $ (\bigstar) $}
 \begin{Def}[Wahrscheinlichkeitstheorie aus WIKIPEDIA]
